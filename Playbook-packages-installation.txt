@@ -1,0 +1,10 @@
+#Author: Ibrehima Keita Devops Engineer
+# Playbook to install  multippe packages on ubuntu machine
+---
+- hosts: all 
+  name: to install packages and sofware
+  become: true 
+  tasks:
+  - name: installation 
+    apt:
+      name: ['wget','vim','zip','unzip']
